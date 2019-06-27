@@ -1,0 +1,129 @@
+:root {
+    font-size: calc(0.6em + 0.4vw);
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+.page-header {
+    width: 100%;
+    display: flex;
+}
+
+.page-header .main-content {
+    width: 100%;
+}
+
+.page-header .aside-menu .btn {
+    padding: 2.9375em 2.625em;
+}
+
+.main-content .content {
+    width: 100%;
+    background:url("../images/dotted-texture.svg") no-repeat 99% 1% ,url("../images/bg-1.jpg") no-repeat;
+    -webkit-background-size:30% ,cover;
+    background-size:30%, cover;
+    padding-bottom: 10em;
+}
+
+.main-content .content .wrapper {
+    width: 87%;
+    margin-left: 13%;
+}
+
+.main-content .bottom-nav {
+    width: 100%;
+}
+
+.content .menu {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .menu .logo{
+    width: 6.125em;
+    padding-top: 2.9375em;
+    padding-bottom: 2.9375em;
+    flex-grow: 1;
+}
+
+.content .menu .nav-bar ul {
+    padding-top: 2.9375em;
+    padding-bottom: 2.9375em;
+    display: flex;
+}
+
+.content .menu .nav-bar ul li:not(:last-of-type){
+    margin-right: 2em;
+}
+
+.content .menu .nav-bar ul li a {
+    font-size: 1.06rem;
+    color: rgba(255, 255, 255, 0.62);
+    white-space: nowrap;
+    padding-bottom: 0.3em;
+}
+
+.content .menu .nav-bar ul li a:hover {
+    border-bottom: 0.1em solid rgba(255, 203, 5, 0.8);
+}
+
+.block-slider {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13em;
+}
+
+.block-slider .slider {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-title h2 {
+    font-size: 3rem;
+    color: #FFFFFF;
+    line-height: 1.548;
+}
+
+.slider-btn .btn{
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    border: 0.125em solid rgba(255, 203, 5, 0.8);
+}
+
+.slider-btn a:not(:last-of-type) {
+    margin-bottom: 0.9em;
+}
+
+.slider-btn a#checked .btn {
+    background-color: #E67E22;
+    border-color: #E67E22;
+}
+
+.block-slider .btn {
+    margin-top: 2em;
+}
+
+.block-slider > .btn a{
+    display: block;
+    width: 11.1em;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.875em 2.8em;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #fff;
+    border: 2px solid #E67E22;
+    box-sizing: content-box;
+}
