@@ -1,1 +1,0 @@
-# yaroslavvalenty.github.io
