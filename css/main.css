@@ -63,7 +63,7 @@ body {
 }
 
 .content .menu .nav-bar ul li:not(:last-of-type){
-    margin-right: 2em;
+    margin-right: 1em;
 }
 
 .content .menu .nav-bar ul li a {
