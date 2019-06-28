@@ -40,7 +40,10 @@ body {
 }
 
 .main-content .bottom-nav {
-    width: 100%;
+    width: 91%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 6.875em;
 }
 
 .content .menu {
@@ -50,7 +53,7 @@ body {
 }
 
 .content .menu .logo{
-    width: 6.125em;
+    width: 6.125rem;
     padding-top: 2.9375em;
     padding-bottom: 2.9375em;
     flex-grow: 1;
@@ -126,4 +129,26 @@ body {
     color: #fff;
     border: 2px solid #E67E22;
     box-sizing: content-box;
+}
+
+.bottom-nav .arrow {
+    padding-top: 1.375em;
+    padding-bottom: 1.375em;
+    margin-left: 50%;
+}
+
+.bottom-nav .arrow a {
+    display: block;
+}
+
+.bottom-nav .social {
+    margin-left: auto;
+}
+
+.bottom-nav .social .container {
+    display: flex;
+}
+
+.bottom-nav .social .container .icon + .icon {
+    margin-left: 1.25em;
 }
