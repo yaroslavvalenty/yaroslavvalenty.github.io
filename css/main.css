@@ -26,6 +26,8 @@ body {
     padding: 2.9375em 2.625em;
 }
 
+
+
 .main-content .content {
     width: 100%;
     background:url("../images/dotted-texture.svg") no-repeat 99% 1% ,url("../images/bg-1.jpg") no-repeat;
@@ -53,10 +55,13 @@ body {
 }
 
 .content .menu .logo{
-    width: 6.125rem;
     padding-top: 2.9375em;
     padding-bottom: 2.9375em;
     flex-grow: 1;
+}
+
+.content .menu .logo img {
+    width: 6.125rem;
 }
 
 .content .menu .nav-bar ul {
