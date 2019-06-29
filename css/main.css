@@ -70,19 +70,33 @@ body {
     display: flex;
 }
 
+.content .menu .nav-bar ul li {
+    position: relative;
+}
+
 .content .menu .nav-bar ul li:not(:last-of-type){
     margin-right: 2em;
 }
 
 .content .menu .nav-bar ul li a {
+    display: block;
     font-size: 1.06rem;
     color: rgba(255, 255, 255, 0.62);
     white-space: nowrap;
     padding-bottom: 0.3em;
 }
+.content .menu .nav-bar ul li::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background: rgba(255, 203, 5, 0.8);
+    transition: width 0.3s ease-in-out;
+}
 
-.content .menu .nav-bar ul li a:hover {
-    border-bottom: 0.1em solid rgba(255, 203, 5, 0.8);
+.content .menu .nav-bar ul li:hover::after {
+    width: 100%;
 }
 
 .block-slider {
